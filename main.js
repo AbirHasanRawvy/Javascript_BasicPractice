@@ -19,3 +19,12 @@ console.log(name);
 
  console.log(age);
 
+//  Data type 
+console.log(typeof (name)); 
+
+console.log(typeof (age)); 
+
+// Boolean 
+const isMarried = false;
+
+console.log(typeof(isMarried));
