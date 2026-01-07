@@ -49,3 +49,19 @@ console.log(person);
 const myFriends = ["jhone","tusher","shajid","shimul"];
 
 console.log(myFriends);
+
+// another example
+const mine = ["Abir Hasan", "AIUB", 25, person];//inherit;
+
+console.log(mine);
+
+//here is under the object array;
+const friend = {
+    schoolFriend:"Jhone , Tusher , Shimul , Aftab , Shajid",
+    collegeFriend: "Same of school friend",
+    uniFriend: "Ratul, Atik, Faisal, Fahmid, Tahfim",
+    afterUni: [mine],
+
+};
+
+console.log(friend);
