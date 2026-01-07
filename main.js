@@ -28,3 +28,24 @@ console.log(typeof (age));
 const isMarried = false;
 
 console.log(typeof(isMarried));
+
+// NonPrimitive
+// Object 
+const person= {
+    name: "Abir Hasan",
+    age: 14,
+    isMarried: false,
+    father: {
+
+        name: "Kamrul Hasan",
+        age: 58,
+        isMarried: true,
+
+    }
+}
+console.log(person);
+
+//Array
+const myFriends = ["jhone","tusher","shajid","shimul"];
+
+console.log(myFriends);
