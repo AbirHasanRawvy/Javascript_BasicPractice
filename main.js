@@ -65,3 +65,34 @@ const friend = {
 };
 
 console.log(friend);
+
+// print index Number
+console.log(mine[2]);
+console.log(friend.uniFriend);
+
+// The object is non-premitive because of they use reffarence
+
+// Same topic example;
+
+const upcomingCourses = [
+    {
+        name: "MERN Courses",
+        image: "....",
+        batch: 17,
+        leftSeatCount: 16,
+    },
+    {
+        name: "MERN Courses",
+        image: "....",
+        batch: 17,
+        leftSeatCount: 16,
+    },
+    {
+        name: "MERN Courses",
+        image: "....",
+        batch: 17,
+        leftSeatCount: 16,
+    },
+
+];
+console.log(upcomingCourses);
