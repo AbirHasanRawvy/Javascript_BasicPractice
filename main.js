@@ -96,3 +96,41 @@ const upcomingCourses = [
 
 ];
 console.log(upcomingCourses);
+
+// Conditional Operator
+
+const ostadDashboardHasUpdate = true;
+const hasStudentJoined = true;
+const hasInstructor1Join = true;
+
+if (ostadDashboardHasUpdate && hasStudentJoined && hasInstructor1Join) {
+    console.log("Class Started");
+}
+else if (!ostadDashboardHasUpdate){
+    console.log("Ostad did not update dashboard!!")
+}
+else if (!hasStudentJoined){
+    console.log("Student did not join!!")
+} else {
+    console.log("Instructor did not join!!")
+}
+
+// Grading Sheet
+const studentMark = 80;
+
+switch (studentMark){
+    case 80:
+        console.log("A+");
+        break;
+    
+    case 70:
+        console.log("A");
+        break;
+       
+    case 60:
+        console.log("A-");
+        break;
+        
+    default:
+        console.log("Not found");
+}
