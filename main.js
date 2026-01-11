@@ -76,26 +76,42 @@ console.log(friend.uniFriend);
 
 const upcomingCourses = [
     {
-        name: "MERN Courses",
+        name: "MERN Courses 1",
         image: "....",
-        batch: 17,
+        batch: 16,
         leftSeatCount: 16,
     },
     {
-        name: "MERN Courses",
+        name: "MERN Courses 2",
         image: "....",
         batch: 17,
-        leftSeatCount: 16,
+        leftSeatCount: 15,
     },
     {
-        name: "MERN Courses",
+        name: "MERN Courses 3",
         image: "....",
-        batch: 17,
-        leftSeatCount: 16,
+        batch: 18,
+        leftSeatCount: 14,
+    },
+    {
+        name: "MERN Courses 4",
+        image: "....",
+        batch: 19,
+        leftSeatCount: 13,
+    },
+    {
+        name: "MERN Courses 5",
+        image: "....",
+        batch: 20,
+        leftSeatCount: 12,
     },
 
 ];
 console.log(upcomingCourses);
+
+for (l=0; l<upcomingCourses.length; l++) {
+    console.log(upcomingCourses[l].name)
+}
 
 // Conditional Operator
 
@@ -133,4 +149,46 @@ switch (studentMark){
         
     default:
         console.log("Not found");
+};
+
+//check false or true
+
+var year = 0;
+
+if (hasStudentJoined) {
+    year = 12;
 }
+else {
+    year = 20;
+}
+console.log(year);
+
+//The upper problem have a short solution
+
+var y = hasStudentJoined ? 12 : 20;
+
+console.log(y);
+
+// Loop
+// For Loop 
+var i;
+for (i = 0; i<9; i++) {
+    console.log(i);
+}
+
+// While Loop
+var j=1;
+while (j <= 10) {
+    console.log(j);
+
+    j = j + 1;
+};
+
+//Do While Loop
+
+var k=1;
+
+do {
+    console.log(k);
+    k = k + 1;
+} while(k <= 10);
