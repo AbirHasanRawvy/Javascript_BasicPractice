@@ -105,13 +105,35 @@ const upcomingCourses = [
         batch: 20,
         leftSeatCount: 12,
     },
+    {
+        name: "MERN Courses 9",
+        image: "....",
+        batch: 20,
+        leftSeatCount: 12,
+    },
 
 ];
 console.log(upcomingCourses);
+// ======== Loop for the Array=============
+// for (l=0; l<upcomingCourses.length; l++) {
+//     console.log(upcomingCourses[l].name)
+// }
 
-for (l=0; l<upcomingCourses.length; l++) {
-    console.log(upcomingCourses[l].name)
-}
+// for (course of upcomingCourses) {
+//     console.log(course.name);
+// }
+
+const demooCourse = {
+    name: "MERN Courses 9",
+    image: "....",
+    batch: 20,
+    leftSeatCount: 12,
+};
+
+for (property in demoCourse) {
+    console.log(property + ": "+ demoCourse[property]);
+};
+
 
 // Conditional Operator
 
