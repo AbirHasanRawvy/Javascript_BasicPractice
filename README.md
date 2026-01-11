@@ -3,7 +3,7 @@ Here is javaScript tips, execution content, JavaScript variables, operators, com
 
 # Getting Started
 First run the developement server: From index.html click on Open With Live Server<br>
-Open: http: (http://127.0.0.1:5501/index5.html) with your browser to see the result.
+Open: http: (http://127.0.0.1:5501/index5.html) with your browser and go to the console part to see the result.
 
 # Learn More
 To learn more about HTML & CSS(Bootstrip), take a look at the following resources:<br>
