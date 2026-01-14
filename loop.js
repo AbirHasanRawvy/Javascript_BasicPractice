@@ -1,5 +1,5 @@
 //Loop
-//for loop;
+//for loop: first condition then work;
 
 for(let p=0; p<5; p++){
 
@@ -42,4 +42,9 @@ while(o <= 5){
     o++;
 };
 
-//Do While Loop;
+//Do While Loop: First work then condition;
+
+do {
+    console.log("The number is ", o);
+    o++;
+} while(o <= 5);
