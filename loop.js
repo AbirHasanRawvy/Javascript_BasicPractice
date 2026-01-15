@@ -48,3 +48,28 @@ do {
     console.log("The number is ", o);
     o++;
 } while(o <= 5);
+
+//For in Loop:When we access the value or property into the javascript we can use the for in loop;
+let studentUni = {
+    name: "Abir Hasan",
+    age: 25,
+    grade: 3.51,
+}
+
+for(let key in studentUni){
+    //for access property;
+    console.log(key);
+
+    //for value access;
+    console.log(studentUni[key]);
+    console.log("000000000000000000000000");
+    console.log(key + ":" + studentUni[key]);
+}
+
+//for of loop: which is use for array;
+let fruits1 = ["Apple1", "Orrange1", "Banana1", "Graps1"];
+
+for(const fruits2 of fruits1){
+    console.log(fruits2);
+}
+console.log("==================================");
