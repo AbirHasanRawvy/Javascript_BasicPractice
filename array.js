@@ -7,7 +7,7 @@ console.log(fruits[2]);
 
 ///array methods;
 //array at method;
-const realNumber = [10, 20, 30, 40, 50];
+const realNumber = [10, 20, 30, 40, 50, 40];
 
 console.log(realNumber.at(3));
 
@@ -37,3 +37,42 @@ console.log(resu);
 //Array findindex: find out the index number;
 const resul = numb.findIndex((num)=> num > 10);
 console.log(resul);
+
+//Array method part2
+//array form: convert string to array;
+const str = "Hello";
+
+const r = Array.from(str)
+
+console.log(r[1]);
+
+//array including;
+const r1 = fruits.includes("mango")
+
+console.log(r1);
+
+//Array join: create array to string;
+const words = ["I", "Love", "Bangladesh"];
+
+const r2 = words.join(" ");
+
+console.log(r2);
+
+//array lastIndex;
+const r3 = realNumber.lastIndexOf(40);
+
+console.log(r3);
+
+//array length: is a property; and also count as a size;
+const r4 = words.length;
+
+console.log(r4);
+
+//Pop method
+
+const animals = ["cat", "dog", "horse", "tiger"];
+
+console.log(animals);
+const r5 = animals.pop()
+
+console.log(animals);
