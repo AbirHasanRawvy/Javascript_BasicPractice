@@ -73,6 +73,43 @@ console.log(r4);
 const animals = ["cat", "dog", "horse", "tiger"];
 
 console.log(animals);
-const r5 = animals.pop()
+const r5 = animals.pop();
 
 console.log(animals);
+
+
+//Array push;
+const r6 = animals.push("lions");
+
+console.log(r6);
+
+//reverse method;
+realNumber.reverse();
+
+console.log(realNumber);
+
+//shift/remove method;
+const colours = ["red", "green", "blue"];
+
+const removeColor = colours.shift();
+
+console.log(removeColor);
+console.log(colours);
+
+//slice method;
+
+let realName = ["Abir", "Hasan", "Rawvy"];
+
+let someName = realName.slice(1,2);
+
+console.log(someName);
+console.log(realName);
+
+//some method;
+
+let hasLareNumber = realNumber.some((num)=> 10)
+
+console.log(hasLareNumber);
+
+
+
