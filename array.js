@@ -111,5 +111,40 @@ let hasLareNumber = realNumber.some((num)=> 10)
 
 console.log(hasLareNumber);
 
+//short method;
+//There have two types of short 1)numbers and 2)words
+
+// //for words:
+// fruits3.short();
+
+// console.log(fruits3);
+// //for numbers:
+// realNumber.short((a,b) => a-b);
+
+// console.log(realNumber);
 
 
+
+//Splice method;
+
+let stu = ["Abir", "Ratul", "Lungi"];
+
+stu.splice(2,3,"Faisal");
+
+console.log(stu);
+
+//To string;
+
+const letter = ["A", "B", "C"];
+let r7 = letter.toString();
+
+console.log(r7);
+console.log(letter);
+
+//unsift method;
+
+let playears = ["Jamal","Hamza"];
+
+playears.unshift("Some");
+
+console.log(playears);
