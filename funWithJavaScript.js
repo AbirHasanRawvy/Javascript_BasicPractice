@@ -65,4 +65,41 @@ if(y5>0){
     console.log("Possitive Number!");
 }else{
     console.log("Negative Number!");
+};
+
+//Squre;
+// var x6 = 10;
+// var result2 = x6 * x6;
+// console.log(result2);
+
+//with function;
+function squ(x6){
+    return x6*x6;
 }
+console.log(squ(10));
+
+//Qube;
+function qub(y6){
+    return y6 * y6 * y6;
+}
+console.log(qub(12));
+
+//1 to 10 integer showing by using the for loop;
+for(var i1 = 0; i1 <=10; i1++){
+
+    console.log(i1);
+}
+
+//Array with function;
+function sumOfBook(arr){
+    var total = 0;
+    for (var i=0; i<arr.legth; i++) {
+        total = total + arr[i];
+        
+    }
+    //return arr;
+    return total;
+};
+var data = [10,20,30,40,50,60];
+console.log(sumOfBook(data));
+//console.log(data.length);
