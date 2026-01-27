@@ -15,7 +15,10 @@ function add1(a1,b1){//a1,b1 is parameters.
 
 console.log(add1(4,5));//4,5 is arguments.
 
-//use template literal;
-function guestFun(){
-    
+//use template literal;//``
+function guestFun(name, age=25){
+    return `Hello! ${name}, your age is: ${age}`; 
 }
+const greetGuest = guestFun("Abir",22);//override;
+console.log(greetGuest);
+//The undefine mean declear something but not assined;
