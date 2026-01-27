@@ -22,3 +22,14 @@ function guestFun(name, age=25){
 const greetGuest = guestFun("Abir",22);//override;
 console.log(greetGuest);
 //The undefine mean declear something but not assined;
+
+//
+function getStudentInfo(name1, marks){
+    return {
+        name1: name1,
+        marks: marks,
+        grade: marks >= 80 ? 'A+' : marks >= 60 ? "B" : "C", 
+    }
+}
+const studentData = getStudentInfo("Abir", 30);
+console.log(studentData);
