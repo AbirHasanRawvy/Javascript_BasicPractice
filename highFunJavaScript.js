@@ -74,3 +74,9 @@ function add11(A1, B1){
 }
 const doubled1 = (A1, B1) => A1 + B1;
 console.log(doubled1(2,2));
+
+//
+const numbers2 = [1, 2, 3, 4, 5];
+const doubled2 = numbers2.map((num) => num * 2);
+
+console.log(doubled2);
