@@ -131,13 +131,106 @@ for(let age1 of randomAges){
 };
 
 ///Start here the advance functon execution way;
+
 //IIFE(Immeduately Invoked function Expressions);
+
 //Basic;
 // function myNoun(name4){
 //     console.log(name4)
 // }
 // myNoun();
+//IIFE;
 console.log("===============================");
 (function(){
     console.log("My name is Abrar.");
 })();
+
+console.log("===============================");
+//IIFE with parameter;
+(function (name2, age2){
+    console.log(`Name: ${name2}, Age: ${age2}`);//this full line have a name String Interpolation;
+})("Abir", 25);
+
+console.log("===============================");
+//genarator function: when we concrol the function its called genarator function;
+function* myGenerator() {
+    yield "First Value";
+    yield "Second Value";
+    return "Completed";
+    yield "Third value";
+    return "Completed";
+};
+
+const gen = myGenerator();
+
+console.log(gen.next());//gf give me value and done name bulian value;
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+//third value is not showing because of we not console it out;
+
+console.log("===============================");
+//another one;
+function* simpleGenerator() {
+    yield 1;//Assiging the value;
+    yield 2;
+    yield 3;
+    return "Done";
+};
+
+const gen1 = simpleGenerator();
+
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+
+
+console.log("===============================");
+//another one with showing the for loop;
+function* colorGenerator() {
+    yield "Red";
+    yield "Green";
+    yield "Blue";
+}
+for (let color1 of colorGenerator()) {
+    console.log(color1);
+} 
+
+console.log("===============================");
+//another one with showing the array;
+function* fruitsGenerator() {
+    yield "Apple";
+    yield "Orange";
+    yield "Mango";
+}
+
+const fruit1 = [...fruitsGenerator()];
+console.log(fruit1); 
+
+console.log("===============================");
+//How use it into the real life;
+//ID Genarator;
+function* idGenerator(prefix = "ID") {
+    let count = 0;
+    while (true) {
+        count++;
+        yield `${prefix}_${count.toString().padStart(4,0)}`;
+    }
+}
+
+const userIdGen = idGenerator("USER");
+const prodIdGen = idGenerator("PROD");
+const idGen = idGenerator();
+console.log(userIdGen.next().value);
+console.log(userIdGen.next().value);
+console.log(userIdGen.next().value);
+console.log(prodIdGen.next().value);
+console.log(userIdGen.next().value);
+console.log(prodIdGen.next().value);
+console.log(idGen.next().value);
+console.log(idGen.next().value);
+
+console.log("===============================");
+
+//Recursive Function;
