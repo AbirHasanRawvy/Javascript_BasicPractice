@@ -234,3 +234,21 @@ console.log(idGen.next().value);
 console.log("===============================");
 
 //Recursive Function;
+function countdown(num) {
+    if(num <= 0) {
+        console.log("Done!");
+        return;
+    }
+    console.log(num);
+    countdown(num - 1);
+};
+countdown(5);
+
+//factorial;
+function factorial(n){
+    if(n <= 1){
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+console.log(factorial(5));
